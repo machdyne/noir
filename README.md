@@ -2,6 +2,8 @@
 
 Noir is an FPGA computer designed by Lone Dynamics Corporation.
 
+![Noir Computer](https://github.com/machdyne/noir/blob/f3d65d738790cf0afc1354cc2bf04febe839a2db/noir.png)
+
 This repo contains schematics, pinouts, a 3D-printable case, example gateware and documentation.
 
 Find more information on the [Noir product page](https://machdyne.com/product/noir-computer/).
