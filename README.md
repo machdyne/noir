@@ -74,7 +74,7 @@ Please follow the setup instructions in the [linux-on-litex-vexriscv](https://gi
 
 ```
 $ cd linux-on-litex-vexriscv
-$ ./make.py --board noir --uart-baudrate 115200 --dcache-size 128 --icache-size 128 --build
+$ ./make.py --board noir --uart-baudrate 115200 --build
 
 $ ls build/noir
 ```
