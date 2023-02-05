@@ -2,6 +2,10 @@
  * Noir Case
  * Copyright (c) 2022 Lone Dynamics Corporation. All rights reserved.
  *
+ * required hardware:
+ *  - 4 x M3 x 18mm countersunk bolts
+ *  - 4 x M3 nuts
+ *
  */
 
 $fn = 100;
@@ -15,7 +19,7 @@ board_spacing = 2;
 wall = 1.5;
 
 top_height = 10;
-bottom_height = 8;
+bottom_height = 8.5;
 
 mdn_board();
 
@@ -47,11 +51,11 @@ module mdn_case_top() {
 
 		// cutouts
 			
-		translate([2,9,-2])
-			roundedcube(board_width-1.25,board_length-15,10.25,2.5);
+		translate([2,9.5,-2])
+			roundedcube(board_width-1.25,board_length-16,10.25,2.5);
 
-		translate([9,3,-2])
-			roundedcube(board_width-15,board_length-3,10.25,2.5);
+		translate([9.5,3,-2])
+			roundedcube(board_width-16,board_length-3,10.25,2.5);
 		
 		// led vent
 		translate([-1,board_length-59,3.5])
@@ -78,12 +82,7 @@ module mdn_case_top() {
 
 			// USBA
 			translate([36.5-(6.2/2),65,-1]) cube([6.2,30,5+1]);
-
-			// LED vent
-			// translate([-5,25,4]) cube([30,1.5,1.5]);
-			// translate([-5,20,4]) cube([30,1.5,1.5]);
-			// translate([-5,15,4]) cube([30,1.5,1.5]);
-				
+			
 			// bolt holes
 			translate([5, 5, -21]) cylinder(d=3.5, h=40);
 			translate([5, 65, -21]) cylinder(d=3.5, h=40);
@@ -91,12 +90,12 @@ module mdn_case_top() {
 			translate([45, 65, -21]) cylinder(d=3.5, h=40);
 
 			// flush mount bolt holes
-			translate([5, 5, top_height-2]) cylinder(d=5, h=4);
-			translate([5, 65, top_height-2]) cylinder(d=5, h=4);
-			translate([45, 5, top_height-2]) cylinder(d=5, h=4);
-			translate([45, 65, top_height-2]) cylinder(d=5, h=4);
+			translate([5, 5, top_height-1.5]) cylinder(d=5.25, h=4);
+			translate([5, 65, top_height-1.5]) cylinder(d=5.25, h=4);
+			translate([45, 5, top_height-1.5]) cylinder(d=5.25, h=4);
+			translate([45, 65, top_height-1.5]) cylinder(d=5.25, h=4);
 
-			// eis text
+			// noir text
 			rotate(270)
 				translate([-22.5,25-3,top_height-0.5])
 					linear_extrude(1)
@@ -141,10 +140,10 @@ module mdn_case_bottom() {
 		translate([45, 65, -11]) cylinder(d=3.2, h=25);
 
 		// nut holes
-		translate([5, 5, -1]) cylinder(d=7, h=2.5+2, $fn=6);
-		translate([5, 65, -1]) cylinder(d=7, h=2.5+2, $fn=6);
-		translate([45, 5, -1]) cylinder(d=7, h=2.5+2, $fn=6);
-		translate([45, 65, -1]) cylinder(d=7, h=2.5+2, $fn=6);
+		translate([5, 5, -1]) cylinder(d=7, h=4, $fn=6);
+		translate([5, 65, -1]) cylinder(d=7, h=4, $fn=6);
+		translate([45, 5, -1]) cylinder(d=7, h=4, $fn=6);
+		translate([45, 65, -1]) cylinder(d=7, h=4, $fn=6);
 
 		}
 		
