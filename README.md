@@ -163,6 +163,10 @@ The 3.3V JTAG header can be used to program the FPGA SRAM as well as the MMOD fl
 | 5 | 5V0 |
 | 6 | GND |
 
+## Resources
+
+ * [fpga-dac audio player](https://github.com/machdyne/fpga-dac)
+
 ## Board Revisions
 
 | Revision | Notes |
