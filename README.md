@@ -60,6 +60,8 @@ Assuming they are installed, you can simply type `make` to build the gateware, w
 
 ## Linux
 
+See the [Kakao Linux](https://github.com/machdyne/kakao) repo for the latest instructions.
+
 ### Prebuilt Images
 
 Copy the files from the `images/linux` directory to the root directory of a FAT-formatted MicroSD card.
