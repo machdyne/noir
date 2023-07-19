@@ -12,7 +12,7 @@ Find more information on the [Noir product page](https://machdyne.com/product/no
 
 There is now a dual-core bitstream optimized for speed that significantly decreases boot time and adds a second RISC-V core.
 
-In addition to updating to this bitstream (`images/noir\_dual.bit`), make sure you copy the `noir\_dual.dtb` file to the SD card and update `boot.json` to use `noir\_dual.dtb`.
+In addition to updating to this bitstream (`images/noir_dual.bit`), make sure you copy the `noir_dual.dtb` file to the SD card and update `boot.json` to use `noir_dual.dtb`.
 
 ## Programming Noir
 
