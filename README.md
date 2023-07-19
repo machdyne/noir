@@ -8,6 +8,12 @@ This repo contains schematics, PCB layouts, pinouts, a 3D-printable case, exampl
 
 Find more information on the [Noir product page](https://machdyne.com/product/noir-computer/).
 
+## Dual-Core Bitstream
+
+There is now a dual-core bitstream optimized for speed that significantly decreases boot time and adds a second RISC-V core.
+
+In addition to updating to this bitstream (`images/noir\_dual.bit`), make sure you copy the `noir\_dual.dtb` file to the SD card and update `boot.json` to use `noir\_dual.dtb`.
+
 ## Programming Noir
 
 Noir has a JTAG interface and ships with a [DFU bootloader](https://github.com/machdyne/tinydfu-bootloader) that allows the included flash [MMOD](https://machdyne.com/product/mmod) to be programmed over the USB-C port.
